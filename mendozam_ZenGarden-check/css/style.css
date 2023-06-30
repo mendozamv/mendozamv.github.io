@@ -1,0 +1,251 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Syncopate:wght@400;700&display=swap');
+
+@media(min-width: 260px)and (max-width: 819px){
+    
+    *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+    
+    header{
+        background-image: url(../images/header-shape.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-top: 6rem;
+        padding-bottom: 14rem;
+    }
+    
+    header h1,h2{
+       margin: 0 auto;
+        width: 80%; 
+    }
+    
+    
+    h1,h2,h3 {
+   font-family: 'Syncopate', sans-serif;
+        color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+        margin: 0 auto;
+    }
+    
+    h2, h3{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 200;
+        padding-top: 0.30rem;
+}
+    
+    h3{
+        color:#1E1E1E;
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+    
+    p{
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 1rem;
+    }
+    
+    .summary{
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    .preamble, .participation, .benefits, .zen-resources ul{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+    }
+    
+    .requirements, footer{
+        background-size: 100%;
+        width: 100%;
+        margin-top: 2.5rem;
+        padding-bottom:2.75rem;
+    }
+    
+        .explanation{
+            margin-top: 4rem;
+        background-image: url(../images/brown-bean.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 8.6rem;
+    }
+    
+    .explanation h3{
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 6.5rem;
+        padding-bottom: 1rem;
+    }
+    
+     .explanation p{
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+         margin-bottom: 1rem;
+    }
+    
+    .participation{
+       margin-top: 4rem; 
+    }
+    
+    .participation p{
+        width: 100%;
+        margin-top: 1.75rem;
+        background-color: #4D912E;
+        border-radius: 25px;
+        color: #fff;
+        padding: 2rem;
+        box-shadow: 10px 10px 5px 0px rgba(195,195,195,0.75);
+    }
+    
+    .benefits{
+       margin-top: 4rem; 
+    }
+    
+    .benefits, .participation h3{
+        border-bottom: solid 2px #1E1E1E;
+    }
+    
+    .benefits p{
+        margin-bottom: 1.5rem;
+    }
+    
+    .requirements{
+        background-image: url(../images/big-shape.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 8.6rem;
+    }
+    
+    .requirements h3{
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 6.5rem;
+        padding-bottom: 1rem;
+    }
+    
+     .requirements p{
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+         margin-bottom: 1rem;
+    }
+    
+    footer{
+        padding-left: 2.313rem;
+        padding-right: 2.313rem;
+        padding-top: 2.5rem;
+        background-color:#1E1E1E; 
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .zen-resources{
+        background-color: #625546;
+        color:#fff;
+        font-family: 'Syncopate', sans-serif;
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 2.5rem;
+    }
+    
+    .resources{
+        display: none;
+    }
+    
+    .zen-resources ul{
+        text-align: center;
+        margin-top: 1rem;
+        list-style: none;
+        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+    }
+    
+    .zen-resources a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .zen-resources a:hover{
+        text-decoration: underline;
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.23);
+    }
+    
+    .zen-resources li{
+        margin-bottom: 1rem;
+    }
+    
+    .zen-validate-html::before{
+        content: "";
+        display: block;
+        height: 46px;
+        width: 46px;
+        background-image: url(../images/html.png);
+        background-repeat: no-repeat;
+        background-size: 46px 46px;
+    }
+    
+    .zen-validate-css::before{
+        content: "";
+        display: block;
+        height: 46px;
+        width: 46px;
+        background-image: url(../images/css.png);
+        background-repeat: no-repeat;
+        background-size: 46px 46px;
+    }
+    
+    .zen-license::before{
+        content: "";
+        display: block;
+        height: 46px;
+        width: 46px;
+        background-image: url(../images/check.png);
+        background-repeat: no-repeat;
+        background-size: 46px 46px;
+}
+    
+    
+    .zen-accessibility::before{
+        content: "";
+        display: block;
+        height: 46px;
+        width: 40px;
+        background-image: url(../images/access.png);
+        background-repeat: no-repeat;
+        background-size: 40px 46px;
+}
+    
+    .zen-github::before{
+        content: "";
+        display: block;
+        height: 46px;
+        width: 46px;
+        background-image: url(../images/github.png);
+        background-repeat: no-repeat;
+        background-size: 46px 46px;}
+}
