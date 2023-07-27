@@ -1,0 +1,1309 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Syncopate:wght@400;700&display=swap');
+
+@media(min-width: 260px)and (max-width: 767px){
+    
+    *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+    
+    header{
+        background-image: url(../images/plant-header.png), url(../images/header-shape.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: cover, cover;
+        background-position: center, center;
+        padding-top: 6rem;
+        padding-bottom: 10rem;
+    }
+    
+    header h1,h2{
+       margin: 0 auto;
+        width: 80%; 
+    }
+    
+    
+    h1,h2,h3 {
+   font-family: 'Syncopate', sans-serif;
+        color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+        margin: 0 auto;
+    }
+    
+    h2, h3{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 200;
+        padding-top: 0.30rem;
+}
+    
+    h3{
+        color:#1E1E1E;
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+    
+    p{
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 1rem;
+    }
+    
+     .intro{
+        background-image: url(../images/plant-left-mob.png);
+        background-repeat: no-repeat;
+         background-size: contain;
+        background-position: -20px 800px;
+         padding-bottom: 14rem;
+    }
+    
+    .summary{
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    .summary a{
+        color:#1E1E1E;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    
+    .summary a:hover{
+        color: #385B2D;
+        font-weight: 600;
+    }
+    
+    .preamble, .participation, .benefits, .zen-resources ul, .design-selection{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+    }
+    
+    .requirements, footer{
+        background-size: 100%;
+        width: 100%;
+        margin-top: 2.5rem;
+        padding-bottom:2.75rem;
+    }
+    
+        .explanation{
+            margin-top: -4rem;
+        background-image: url(../images/brown-bean.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 8.6rem;
+    }
+    
+    .explanation h3{
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 6.5rem;
+        padding-bottom: 1rem;
+    }
+    
+     .explanation p{
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+         margin-bottom: 1rem;
+    }
+    
+    .participation{
+       margin-top: 4rem; 
+    }
+    
+    .participation p{
+        width: 100%;
+        margin-top: 1.75rem;
+        background-color: #4D912E;
+        border-radius: 25px;
+        color: #fff;
+        padding: 2rem;
+        box-shadow: 10px 10px 5px 0px rgba(195,195,195,0.75);
+    }
+    
+    .participation a{
+        color:#fff;
+        text-decoration: none;
+        text-transform:capitalize;
+        text-decoration: underline;
+    }
+    
+    .participation a:hover{
+        font-weight: 600;
+    }
+    
+    .benefits{
+       margin-top: 4rem; 
+    }
+    
+    .benefits, .participation h3{
+        border-bottom: solid 2px #1E1E1E;
+    }
+    
+    .benefits p{
+        margin-bottom: 1.5rem;
+    }
+    
+   .requirements{
+        background-image: url(../images/small-pote.png), url(../images/big-shape.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 250px, cover;
+        background-position: 78px 1150px, center;
+        padding-bottom: 32.6rem;
+    }
+    
+    .requirements h3{
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 6.5rem;
+        padding-bottom: 1rem;
+    }
+    
+     .requirements p{
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+         margin-bottom: 1rem;
+    }
+    
+    .requirements a{
+        color:#fff;
+        text-decoration: none;
+        text-transform:capitalize;
+        text-decoration: underline;
+    }
+    
+    .requirements a:hover{
+        font-weight: 600;
+    }
+    
+    .design-selection{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        color: #1E1E1E;
+        background-image: url(../images/redonda.png);
+        background-repeat: no-repeat;
+         background-size: contain;
+        background-position: 0 600px;
+        padding-bottom: 16rem;
+    }
+    
+    .design-selection nav{
+        padding-top: 0.6rem;
+        width: 80%;
+    }
+    
+    .design-selection ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+    }
+    
+    .design-selection li{
+        display: flex;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 1em 2%;
+        background-color: rgba(180, 180, 180, 0.25);
+        border-radius: 10px;
+    }
+    
+    .designer-name{
+        color: #625546;
+        font-style: italic;
+    }
+    
+    .design-name{
+        color: #385B2D;
+        font-weight: 600;
+    }
+    
+    .design-selection a:hover{
+        color:#4D912E;
+        text-decoration: underline;
+    }
+    
+    .design-selection a{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        text-decoration: none;
+        justify-content: flex-end;
+        text-align: right;
+        padding-right: 5px;
+    }
+    
+    .design-archives{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-family: 'Syncopate', sans-serif;
+        color: #fff;
+        background-color: #385B2D;
+        margin-top: 1.5rem;
+    }
+    
+    .design-archives h3{
+        display: none;
+    }
+    
+    .design-archives a{
+        color: #fff;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    .design-archives a:hover{
+        font-weight: 500;
+        text-decoration: underline;
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.23);
+    }
+    
+    .viewall{
+        margin-top: 1.2rem;
+    }
+    
+    .design-archives nav{
+        width: 80%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .design-archives ul{
+        list-style: none;
+        text-align: center;
+    }
+    
+     footer{
+        padding-left: 2.313rem;
+        padding-right: 2.313rem;
+        padding-top: 2.5rem;
+        display: flex;
+        justify-content: space-between;
+         color: #1E1E1E;
+         
+    }
+    
+     footer a{
+        color: #1E1E1E;
+         text-align: center;
+         font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    footer a:hover{
+        color: #4D912E;
+        text-shadow: 3px 3px 2px rgba(0,0,0,0.23);
+    }
+    
+   .zen-validate-html::before{
+       padding-bottom: 1rem;
+        content: "";
+        display: block;
+        height: 46px;
+        width: 46px;
+        background-image: url(../images/html.png);
+        background-repeat: no-repeat;
+        background-size: 46px 46px;
+    }
+    
+    .zen-validate-css::before{
+        padding-bottom: 1rem;
+        content: "";
+        display: block;
+        height: 46px;
+        width: 46px;
+        background-image: url(../images/css.png);
+        background-repeat: no-repeat;
+        background-size: 46px 46px;
+    }
+    
+    .zen-license::before{
+        padding-bottom: 1rem;
+        content: "";
+        display: block;
+        height: 46px;
+        width: 49px;
+        background-image: url(../images/cc.png);
+        background-repeat: no-repeat;
+        background-size: 46px 46px;
+}
+    
+    
+    .zen-accessibility::before{
+        padding-bottom: 1rem;
+        content: "";
+        display: block;
+        height: 46px;
+        width: 40px;
+        background-image: url(../images/acc.png);
+        background-repeat: no-repeat;
+        background-size: 40px 46px;
+}
+    
+    .zen-github::before{
+        padding-bottom: 1rem;
+        content: "";
+        display: block;
+        height: 46px;
+        width: 46px;
+        background-image: url(../images/github.png);
+        background-repeat: no-repeat;
+        background-size: 46px 46px;}
+
+    
+   .zen-resources{
+       width: 100%;
+        background-color: #625546;
+        color:#fff;
+        font-family: 'Syncopate', sans-serif;
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    
+.zen-resources h3{
+    display: none;
+}
+    
+    .zen-resources ul{
+        list-style: none;
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+
+    
+}
+    .zen-resources a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .zen-resources a:hover{
+        text-decoration: underline;
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.23);
+    }
+    
+    .zen-resources li{
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}
+
+
+@media(min-width: 768px) and (max-width: 1024px){
+
+     *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+    
+     header{
+        background-image: url(../images/plant-header-main.png), url(../images/header-shape.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 78%,cover;
+        background-position: right, center;
+        padding-top: 6rem;
+        padding-bottom: 10rem;
+    }
+    
+    header h1,h2{
+       margin: 0 auto;
+        width: 80%; 
+    }
+    
+    
+    h1,h2,h3 {
+   font-family: 'Syncopate', sans-serif;
+        color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+        margin: 0 auto;
+    }
+    
+    h2, h3{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 200;
+        padding-top: 0.30rem;
+}
+    
+    h3{
+        color:#1E1E1E;
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+    
+    p{
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 1rem;
+    }
+    
+    .summary{
+        margin: 0 auto;
+        width: 80%;
+        padding-left: 14%;
+    }
+    
+    .summary a{
+        color:#1E1E1E;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    
+    .summary a:hover{
+        color: #385B2D;
+        font-weight: 600;
+    }
+
+    .intro{
+        background-image: url(../images/plant-left.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+    }
+    
+    .preamble{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        padding-left: 14%;
+    }
+    
+    .requirements, footer, .participation{
+        background-size: 100%;
+        width: 100%;
+        margin-top: 2.5rem;
+        padding-bottom:2.75rem;
+    }
+    
+        .explanation{
+            margin-top: 4rem;
+        background-image: url(../images/main-brown.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 8.6rem;
+            padding-left: 14%;
+    }
+    
+    .explanation h3{
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 8.5rem;
+        padding-bottom: 1rem;
+    }
+    
+     .explanation p{
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+         margin-bottom: 1rem;
+    }
+    
+    .participation{
+       margin-top: 4rem;
+        background-image: url(../images/thin-plant.png);
+        background-repeat: no-repeat;
+        background-size: 60% 90%;
+        background-position: -80px;
+    }
+    
+    .participation p{
+        width: 80%;
+        margin: 0 auto;
+        margin-left: 14%;
+        margin-top: 1.75rem;
+        background-color: #4D912E;
+        border-radius: 25px;
+        color: #fff;
+        padding: 2rem;
+        box-shadow: 10px 10px 5px 0px rgba(195,195,195,0.75);
+    }
+    
+    .participation h3{
+        width: 80%;
+        margin: 0 auto;
+        margin-left: 14%;
+        margin-top: 1.75rem;
+    }
+    
+    .participation a{
+        color:#fff;
+        text-decoration: none;
+        text-transform:capitalize;
+        text-decoration: underline;
+    }
+    
+    .participation a:hover{
+        font-weight: 600;
+    }
+    
+    .benefits{
+       margin-top: 4rem;
+        width: 80%;
+        margin: 0 auto;
+        margin-left: 14%;
+    }
+    
+    .benefits, .participation h3{
+        border-bottom: solid 2px #1E1E1E;
+    }
+    
+    .benefits p{
+        margin-bottom: 1.5rem;
+        padding-right: 10px;
+    }
+    
+    .requirements{
+        background-image: url(../images/pote.png), url(../images/main-green.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 340px, cover;
+        background-position: -120px, center;
+        padding-bottom: 8.6rem;
+        padding-left: 14%;
+    }
+    
+    .requirements h3{
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 8.5rem;
+        padding-bottom: 1rem;
+    }
+    
+     .requirements p{
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+         margin-bottom: 1rem;
+    }
+    
+    .requirements a{
+        color:#fff;
+        text-decoration: none;
+        text-transform:capitalize;
+        text-decoration: underline;
+    }
+    
+    .requirements a:hover{
+        font-weight: 600;
+    }
+
+    
+    .design-selection{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        color: #1E1E1E;
+        background-image: url(../images/redonda.png);
+        background-repeat: no-repeat;
+         background-size: contain;
+        background-position: 0 500px;
+        padding-bottom: 30rem;
+    }
+    
+    .design-selection nav{
+        padding-top: 0.6rem;
+        width: 80%;
+    }
+    
+    .design-selection ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+    }
+    
+    .design-selection li{
+        display: flex;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 1em 2%;
+        background-color: rgba(180, 180, 180, 0.25);
+        border-radius: 10px;
+    }
+    
+    .designer-name{
+        color: #625546;
+        font-style: italic;
+    }
+    
+    .design-name{
+        color: #385B2D;
+        font-weight: 600;
+    }
+    
+    .design-selection a:hover{
+        color:#4D912E;
+        text-decoration: underline;
+    }
+    
+    .design-selection a{
+        display: flex;
+        flex-wrap: wrap;
+        width: 64%;
+        text-decoration: none;
+        justify-content: flex-end;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    
+        .design-archives{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-family: 'Syncopate', sans-serif;
+        color: #fff;
+        background-color: #385B2D;
+        margin-top: 1.5rem;
+    }
+    
+    .design-archives h3{
+        display: none;
+    }
+    
+    .design-archives a{
+        color: #fff;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    .design-archives a:hover{
+        font-weight: 500;
+        text-decoration: underline;
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.23);
+    }
+    
+    .viewall{
+        margin-top: 1.2rem;
+    }
+    
+    .design-archives nav{
+        width: 80%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .design-archives ul{
+        list-style: none;
+        text-align: center;
+    }
+
+       footer{
+         width: 80%;
+         margin: 0 auto;
+        padding-left: 2.313rem;
+        padding-right: 2.313rem;
+        padding-top: 2.5rem;
+        display: flex;
+        justify-content: space-between;
+         color: #1E1E1E;
+         
+    }
+    
+     footer a{
+        color: #1E1E1E;
+         text-align: center;
+         font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    footer a:hover{
+        color: #4D912E;
+        text-shadow: 3px 3px 2px rgba(0,0,0,0.23);
+    }
+
+    
+   .zen-validate-html::before{
+       padding-bottom: 1rem;
+        content: "";
+        display: block;
+        height: 46px;
+        width: 46px;
+        background-image: url(../images/html.png);
+        background-repeat: no-repeat;
+        background-size: 46px 46px;
+    }
+    
+    .zen-validate-css::before{
+        padding-bottom: 1rem;
+        content: "";
+        display: block;
+        height: 46px;
+        width: 46px;
+        background-image: url(../images/css.png);
+        background-repeat: no-repeat;
+        background-size: 46px 46px;
+    }
+    
+    .zen-license::before{
+        padding-bottom: 1rem;
+        content: "";
+        display: block;
+        height: 46px;
+        width: 49px;
+        background-image: url(../images/cc.png);
+        background-repeat: no-repeat;
+        background-size: 46px 46px;
+}
+    
+    
+    .zen-accessibility::before{
+        padding-bottom: 1rem;
+        content: "";
+        display: block;
+        height: 46px;
+        width: 40px;
+        background-image: url(../images/acc.png);
+        background-repeat: no-repeat;
+        background-size: 40px 46px;
+}
+    
+    .zen-github::before{
+        padding-bottom: 1rem;
+        content: "";
+        display: block;
+        height: 46px;
+        width: 46px;
+        background-image: url(../images/github.png);
+        background-repeat: no-repeat;
+        background-size: 46px 46px;}
+
+    
+   .zen-resources{
+       width: 100%;
+        background-color: #625546;
+        color:#fff;
+        font-family: 'Syncopate', sans-serif;
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    
+.zen-resources h3{
+    display: none;
+}
+    
+    .zen-resources ul{
+        width: 80%;
+        list-style: none;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        column-gap: 5rem;
+        margin: 0 auto;
+
+    
+}
+    .zen-resources a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .zen-resources a:hover{
+        text-decoration: underline;
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.23);
+    }
+    
+    .zen-resources li{
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+     *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+    
+    header{
+        background-image: url(../images/plant-header-main.png), url(../images/pc-header.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 60%, cover;
+        background-position: right, center;
+        padding-top: 6rem;
+        padding-bottom: 10rem;
+    }
+    
+    header h2{
+       margin: 0 auto;
+        width: 80%; 
+        font-size: 1.6rem;
+        margin-top: 0.5rem;
+    }
+    
+    header h1{
+        margin: 0 auto;
+        width: 80%; 
+        font-size: 3rem;
+    }
+    
+    
+    h1,h2,h3 {
+   font-family: 'Syncopate', sans-serif;
+        color: #fff;
+    font-weight: 500;
+    font-size: 2.5rem;
+        margin: 0 auto;
+    }
+    
+    h2, h3{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 200;
+        padding-top: 0.30rem;
+}
+    
+    h3{
+        color:#1E1E1E;
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+    
+    p{
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 1rem;
+    }
+    
+    .summary{
+        margin: 0 auto;
+        width: 80%;
+        padding-left: 14%;
+    }
+    
+    .summary a{
+        color:#1E1E1E;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    
+    .summary a:hover{
+        color: #385B2D;
+        font-weight: 600;
+    }
+
+    .intro{
+        background-image: url(../images/plant-left.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+    }
+    
+    .preamble{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        padding-left: 14%;
+    }
+    
+    .requirements, footer, .participation{
+        background-size: 100%;
+        width: 100%;
+        margin-top: 2.5rem;
+        padding-bottom:2.75rem;
+    }
+    
+        .explanation{
+            margin-top: 4rem;
+        background-image: url(../images/main-brown.png);
+        background-repeat: no-repeat;
+        background-size: 120% 100%;
+        background-position: center;
+        padding-bottom: 8.6rem;
+            padding-left: 14%;
+    }
+    
+    .explanation h3{
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 8.5rem;
+        padding-bottom: 1rem;
+    }
+    
+     .explanation p{
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+         margin-bottom: 1rem;
+    }
+    
+    .participation{
+       margin-top: 4rem;
+        background-image: url(../images/thin-plant.png);
+        background-repeat: no-repeat;
+        background-size: 40% 90%;
+        background-position: -20px;
+        padding-left: 10%;
+    }
+    
+    .participation p{
+        width: 80%;
+        margin: 0 auto;
+        margin-left: 14%;
+        margin-top: 1.75rem;
+        background-color: #4D912E;
+        border-radius: 25px;
+        color: #fff;
+        padding: 2rem;
+        box-shadow: 10px 10px 5px 0px rgba(195,195,195,0.75);
+    }
+    
+    .participation h3{
+        width: 80%;
+        margin: 0 auto;
+        margin-left: 14%;
+        margin-top: 1.75rem;
+    }
+    
+    .participation a{
+        color:#fff;
+        text-decoration: none;
+        text-transform:capitalize;
+        text-decoration: underline;
+    }
+    
+    .participation a:hover{
+        font-weight: 600;
+    }
+    
+    .benefits{
+        width: 86%;
+        margin: 0 auto;
+    }
+    
+    .benefits h3{
+        margin-left: 18%;
+    }
+    
+    .benefits, .participation h3{
+        border-bottom: solid 2px #1E1E1E;
+    }
+    
+    .benefits p{
+        margin-bottom: 1.5rem;
+        padding-right: 10px;
+        margin-left: 18%;
+    }
+    
+    .requirements{
+        background-image: url(../images/pote.png), url(../images/main-green.png);
+        background-repeat: no-repeat, no-repeat;
+        background-size: 320px, 150% 100%;
+        background-position: -5px, center;
+        padding-bottom: 8.6rem;
+        padding-left: 14%;
+    }
+    
+    .requirements h3{
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 8.5rem;
+        padding-bottom: 1rem;
+    }
+    
+     .requirements p{
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+         margin-bottom: 1rem;
+    }
+    
+    .requirements a{
+        color:#fff;
+        text-decoration: none;
+        text-transform:capitalize;
+        text-decoration: underline;
+    }
+    
+    .requirements a:hover{
+        font-weight: 600;
+    }
+
+    
+    .design-selection{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        color: #1E1E1E;
+        background-image: url(../images/redonda.png);
+        background-repeat: no-repeat;
+         background-size: contain;
+        background-position: 0 400px;
+        padding-bottom: 36rem;
+    }
+    
+    .design-selection nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding-top: 0.6rem;
+        width: 80%;
+    }
+    
+    .design-selection ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+    }
+    
+    .design-selection li{
+        display: flex;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 1em 2%;
+        background-color: rgba(180, 180, 180, 0.25);
+        border-radius: 10px;
+    }
+    
+    .designer-name{
+        color: #625546;
+        font-style: italic;
+    }
+    
+    .design-name{
+        color: #385B2D;
+        font-weight: 600;
+    }
+    
+    .design-selection a:hover{
+        color:#4D912E;
+        text-decoration: underline;
+    }
+    
+    .design-selection a{
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        text-decoration: none;
+        justify-content: flex-end;
+        text-align: right;
+        padding-right: 5px;
+    }
+
+    
+        .design-archives{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-family: 'Syncopate', sans-serif;
+        color: #fff;
+        background-color: #385B2D;
+        margin-top: 1.5rem;
+    }
+    
+    .design-archives h3{
+        display: none;
+    }
+    
+    .design-archives a{
+        color: #fff;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    .design-archives a:hover{
+        font-weight: 500;
+        text-decoration: underline;
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.23);
+    }
+    
+    .viewall{
+        margin-top: 1.2rem;
+    }
+    
+    .design-archives nav{
+        width: 80%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .design-archives ul{
+        list-style: none;
+        text-align: center;
+    }
+
+       footer{
+           display: flex;
+         width: 80%;
+         margin: 0 auto;
+        padding-left: 2.313rem;
+        padding-right: 2.313rem;
+        padding-top: 2.5rem;
+        display: flex;
+        justify-content: space-between;
+         color: #1E1E1E;
+         
+    }
+    
+     footer a{
+        color: #1E1E1E;
+         text-align: center;
+         font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    footer a:hover{
+        color: #4D912E;
+        text-shadow: 3px 3px 2px rgba(0,0,0,0.23);
+    }
+
+    
+   .zen-validate-html::before{
+       padding-bottom: 1rem;
+        content: "";
+        display: block;
+        height: 52px;
+        width: 52px;
+        background-image: url(../images/html.png);
+        background-repeat: no-repeat;
+        background-size: 52px 52px;
+    }
+    
+    .zen-validate-css::before{
+        padding-bottom: 1rem;
+        content: "";
+        display: block;
+        height: 52px;
+        width: 52px;
+        background-image: url(../images/css.png);
+        background-repeat: no-repeat;
+        background-size: 52px 52px;
+    }
+    
+    .zen-license::before{
+        padding-bottom: 1rem;
+        content: "";
+        display: block;
+        height: 52px;
+        width: 52px;
+        background-image: url(../images/cc.png);
+        background-repeat: no-repeat;
+        background-size: 52px 52px;
+}
+    
+    
+    .zen-accessibility::before{
+        padding-bottom: 1rem;
+        content: "";
+        display: block;
+        height: 52px;
+        width: 52px;
+        background-image: url(../images/acc.png);
+        background-repeat: no-repeat;
+        background-size: 52px 52px;
+}
+    
+    .zen-github::before{
+        padding-bottom: 1rem;
+        content: "";
+        display: block;
+        height: 52px;
+        width: 52px;
+        background-image: url(../images/github.png);
+        background-repeat: no-repeat;
+        background-size: 52px 52px;}
+    
+    .zen-resources{
+       width: 100%;
+        background-color: #625546;
+        color:#fff;
+        font-family: 'Syncopate', sans-serif;
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    
+.zen-resources h3{
+    display: none;
+}
+    
+    .zen-resources ul{
+        width: 80%;
+        list-style: none;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 5rem;
+        margin: 0 auto;
+
+    
+}
+    .zen-resources a{
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .zen-resources a:hover{
+        text-decoration: underline;
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.23);
+    }
+    
+    .zen-resources li{
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+
+}
+
