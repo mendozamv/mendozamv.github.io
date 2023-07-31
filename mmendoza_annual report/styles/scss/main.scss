@@ -1,0 +1,1409 @@
+// Scss Document
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600&family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+// Scss Document
+$green: #54C04A;
+$white: #FFFFFF;
+$blue: #0A6186;
+$light-blue: #27B7C8;
+$black: #232323;
+
+$font-mini: 'Poppins', sans-serif;
+
+@mixin border-caja{
+	border-bottom-left-radius: 1.375rem;
+	border-bottom-right-radius: 1.375rem;
+}
+
+@mixin border{
+	border-radius: 1.375rem;
+}
+
+@mixin button{
+	margin-top: 1.3rem;
+	text-transform: uppercase;
+		text-align: center;
+		text-decoration-line: none;
+	padding: 1rem;
+		 border: 2px solid;
+}
+
+@mixin titulo{
+	font-weight: 400;
+		font-size: 2.25rem;
+		text-transform: uppercase;
+	font-family: 'Barlow Condensed', sans-serif;
+	color: $black;
+}
+
+@mixin subtitle{
+	font-weight: 400;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.8rem;
+		text-transform: uppercase;
+}
+
+@mixin text{
+	font-weight: 400;
+		font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+@media(min-width: 260px)and (max-width: 819px){
+    
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+	
+	.animation{
+		animation-name: move;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+	
+	.img-animation{
+		animation-name: move;
+		animation-duration: 6s;
+		animation-fill-mode: forwards;
+	}
+    
+    section, footer, nav, .lista-container, header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .content, .div-box{
+        width: 86%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+	
+	.menu{
+		display: none;
+	}
+	
+	nav{
+		background-color: $blue;
+	}
+    
+    .navigation{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+    }
+	
+	.fa-bars{
+		padding-top: 2rem;
+		padding-right: 1.4rem;
+		font-size: 2rem;
+		color:$white;
+		
+	}
+    
+    .box{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: left;
+        margin-top: 1.6rem;
+        padding: 3rem;
+    }
+	
+	nav{
+		margin-bottom: 2.4rem;
+	}
+    
+    .uno{
+        margin-top: 0;
+    }
+    
+    .three, .two, .foto, footer, .grid-services, .four, .five, .six{
+        margin-top: 3rem;
+    }
+    
+    .big-box{
+         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: left;
+    }
+    
+    nav img{
+        width: 50%;
+    }
+	
+	.big-header{
+		display:none;
+	}
+    
+    .logo{
+		width: 80%;
+    }
+	
+    
+    footer .content{
+        flex-direction: column;
+		padding: 2rem 0;
+    }
+    
+    .box-footer{
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 1rem;
+		color: $white;
+    }
+	
+	.box-footer a{
+		color: $white;
+		text-decoration-line: none;
+	}
+	
+	.box-footer a:hover{
+		text-decoration-line: underline;
+	}
+    
+    footer img{
+        width: 50%;
+    }
+    
+    .one p, .two p, .three p, .five p, .six p{
+        padding-top: 1rem;
+    }
+    
+    .div-box{
+        width: 100%;
+    }
+    
+    .financial-image img{
+        order: 2;
+    }
+    
+    .key-elements{
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 5px;
+    }
+    
+    .elements{
+        width: 48%;
+    }
+    
+    
+    .lista{
+        margin-top: 1.2rem;
+    }
+	
+	.lista ol{
+		margin:0 0 0 0.75rem;
+	}
+    
+    .lista-container{
+        justify-content: space-between;
+    }
+    
+    .lista-container{
+        margin-top: 1rem;
+    }
+    
+    .lista-container li{
+        margin: 0.6rem 0;
+    }
+	
+	h1{
+		@include titulo;
+	}
+	
+	h2{
+		@include subtitle;
+	}
+	
+	p{
+		@include text;
+		color: $black;
+	}
+	
+	h3{
+		@include subtitle;
+		font-size: 1.25rem;
+		margin-top: 1.2rem;
+		font-family: $font-mini;
+		color: $light-blue;
+	}
+	
+	.blue-services, .dos{
+		background-color: $light-blue;
+		color: $white;
+		@include border;
+	}
+	
+	.blue-services p, .green-services p, .dark-services p{
+		color: $white;
+	}
+	
+	.green-services, .tres{
+		background-color: $green;
+		color: $white;
+		@include border;
+	}
+	
+	.dark-services, .uno{
+		background-color: $blue;
+		color: $white;
+		@include border;
+	}
+	
+	.button{
+		@include border;
+		@include button;
+		@include text;
+		border-color: $light-blue;
+		color: $light-blue;
+	}
+	
+	.button:hover{
+		background-color: $light-blue;
+		color: $white;
+	}
+	
+	.last-section .button{
+		width: 100%;
+		border-color: $white;
+		color: $white;
+	}
+	
+	.azul .button:hover{
+		background-color: $white;
+		color: $blue;
+	}
+	
+	.verde .button:hover{
+		background-color: $white;
+		color: $green;
+	}
+	
+	.azul{
+		background-color: $blue;
+		@include border;
+	}
+	
+	.verde, .green-financial{
+		background-color: $green;
+		@include border;
+	}
+	
+	.last-section p, h2, .green-financial p{
+		color: $white;
+	}
+	
+	.grid-services img{
+		width: 100%;
+	}
+	
+	.primera-imagen{
+		margin-bottom: 2.40rem;
+		@include border;
+	}
+	
+	.segunda-imagen{
+		margin-top: 2.40rem;
+	}
+	
+	footer{
+		background-color: $blue;
+	}
+	
+	.offerings img{
+		width: 142.85%;
+		margin-top: 1.4rem;
+		margin-bottom: -49.5px;
+		@include border-caja;
+	}
+    
+	.financial-data img, .image-building, .image-header, .image-people, .cute-imagen, .image-revenue, .data-revenue{
+		width: 100%;
+		margin-top: 1rem;
+	}
+	
+	.data-revenue{
+		height: 8.75rem;
+	}
+	
+	.image-building, .cute-imagen, .image-revenue{
+		@include border;
+	}
+	
+	.cute-imagen{
+		margin-bottom: 1.3rem;
+	}
+	
+	.title-key{
+		color:$light-blue;
+	}
+	
+	.elements{
+		@include border;
+		background-color: $blue;
+
+	}
+	
+	.elements p{
+		margin-top: 1rem;
+		color: $white;
+		text-align: center;
+	}
+	
+	.lista-container{
+		@include text;
+	}
+	
+	.elements i{
+		color: $white;
+		font-size: 3.2rem;
+	}
+	
+	.uno p, .dos p, .tres p{
+		color: $white;
+	}
+	
+	.uno h1, .dos h1, .tres h1{
+		color: $white;
+	}
+	
+	.foto img{
+		width: 100%;
+	}
+	
+	.foto{
+		grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 5;
+		grid-row-end: 6;
+	}
+	
+	.grid-primero{
+		margin-top: 2.5rem;
+		display: grid;
+		width: 86%;
+		column-gap: 10px;
+		grid-template-columns: 70px 70px 70px 70px 90px;
+		grid-template-rows: 512px 42px 13px 448px 5px 224px;
+		
+	}
+	
+	.values{
+		margin-top: 6rem;
+		grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 3;
+		grid-row-end: 4;
+	}
+	
+	.who{
+		grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+	
+	.values p, .who p{
+		margin-top: 1rem;
+	}
+	
+	.values h1, .who h1{
+		color: $light-blue;
+	}
+	
+	.grid-services{
+        width: 86%;
+        display: grid;
+       grid-template-columns: 70px 70px 70px 100px 100px;
+		grid-template-rows: 165px 56px 412px 61px 40px;
+
+    }
+    
+    .parrafo-unido{
+        grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 3;
+		grid-row-end: 4;
+    }
+    
+    .primera-imagen{
+        grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 2;
+    }
+    
+    .segunda-imagen{
+		grid-column-start: 1;
+		grid-column-end: 5;
+		grid-row-start: 6;
+		grid-row-end: 7;
+    }
+	
+	header{
+		margin-top: -3rem;
+	}
+
+    }
+
+
+@media(min-width: 768px) and (max-width: 1024px){
+	 *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    section, footer, nav, .lista-container, header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .content, .div-box{
+        width: 86%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    
+    .box{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: left;
+        margin-top: 1.6rem;
+        padding: 3rem;
+    }
+	
+	nav{
+		margin-bottom: 2.4rem;
+	}
+    
+    .uno{
+        margin-top: 0;
+    }
+    
+    .three, .two, .foto, footer, .grid-services, .four, .five, .six{
+        margin-top: 3rem;
+    }
+    
+    .big-box{
+         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: left;
+    }
+    
+    nav img{
+        width: 50%;
+    }
+    
+ .menu{
+		display: none;
+	}
+	
+	nav{
+		background-color: $blue;
+	}
+    
+    .navigation{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+    }
+	
+	.fa-bars{
+		padding-top: 2.6rem;
+		padding-right: 1.4rem;
+		font-size: 3rem;
+		color:$white;
+		
+	}
+    
+    .logo{
+		width: 50%;
+    }
+    
+    footer .content{
+        flex-direction: column;
+		padding: 2rem 0;
+    }
+    
+    .box-footer{
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 1rem;
+		color: $white;
+    }
+	
+	.box-footer a{
+		color: $white;
+		text-decoration-line: none;
+	}
+	
+	.box-footer a:hover{
+		text-decoration-line: underline;
+	}
+    
+    footer img{
+        width: 50%;
+    }
+    
+    .one p, .two p, .three p, .five p, .six p{
+        padding-top: 1rem;
+    }
+    
+    .div-box{
+        width: 100%;
+    }
+    
+    .financial-image img{
+        order: 2;
+    }
+    
+    
+    .lista{
+        margin-top: 1.2rem;
+    }
+	
+	.lista ol{
+		margin:0 0 0 0.75rem;
+	}
+    
+    .lista-container{
+        justify-content: space-between;
+		margin-top: 1rem;
+		@include text;
+    }
+    
+    .lista-container li{
+        margin: 0.6rem 0;
+    }
+    
+  .grid-services{
+        width: 86%;
+        display: grid;
+        grid-template-columns: 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px;
+		grid-template-rows: 232px 45px 24px 196px;
+
+    }
+    
+    .parrafo-unido{
+        grid-column-start: 1;
+		grid-column-end: 6;
+		grid-row-start: 1;
+		grid-row-end: 4;
+    }
+    
+    .primera-imagen{
+        grid-column-start: 7;
+		grid-column-end: 11;
+		grid-row-start: 1;
+		grid-row-end: 2;
+    }
+    
+    .segunda-imagen{
+        grid-column-start: 7;
+		grid-column-end: 11;
+		grid-row-start: 4;
+		grid-row-end: 5;
+    }
+	
+	h1{
+		@include titulo;
+	}
+	
+	h2{
+		@include subtitle;
+	}
+	
+	p{
+		@include text;
+		color: $black;
+	}
+	
+	h3{
+		@include subtitle;
+		font-size: 1.25rem;
+		margin-top: 1.2rem;
+		font-family: $font-mini;
+		color: $light-blue;
+	}
+	
+	.blue-services, .dos{
+		background-color: $light-blue;
+		color: $white;
+		@include border;
+	}
+	
+	.blue-services p, .green-services p, .dark-services p{
+		color: $white;
+	}
+	
+	.green-services, .tres{
+		background-color: $green;
+		color: $white;
+		@include border;
+	}
+	
+	.dark-services, .uno{
+		background-color: $blue;
+		color: $white;
+		@include border;
+	}
+	
+	.button{
+		@include border;
+		@include button;
+		@include text;
+		width: 60%;
+		margin: 0 auto;
+		border-color: $light-blue;
+		color: $light-blue;
+		margin-top: 1.4rem;
+	}
+	
+	.button:hover{
+		background-color: $light-blue;
+		color: $white;
+	}
+	
+	.last-section .button{
+		width: 100%;
+		border-color: $white;
+		color: $white;
+	}
+	
+	.azul .button:hover{
+		background-color: $white;
+		color: $blue;
+	}
+	
+	.verde .button:hover{
+		background-color: $white;
+		color: $green;
+	}
+	
+	.azul{
+		background-color: $blue;
+		@include border;
+	}
+	
+	.verde, .green-financial{
+		background-color: $green;
+		@include border;
+
+	}
+	
+	.last-section p, h2, .green-financial p{
+		color: $white;
+	}
+	
+	.grid-services img{
+		width: 100%;
+	}
+	
+	.primera-imagen{
+		margin-bottom: 2.40rem;
+		@include border;
+	}
+	
+	.segunda-imagen{
+		margin-top: 2.40rem;
+	}
+	
+	footer{
+		background-color: $blue;
+	}
+    
+	.financial-data img, .image-building, .image-header, .image-people, .image-revenue, .data-revenue{
+		width: 100%;
+		margin-top: 1rem;
+	}
+	
+	.data-revenue{
+		height: 8.75rem;
+	}
+	
+	.image-building, .cute-imagen, .image-revenue{
+		@include border;
+	}
+	
+	.cute-imagen{
+		margin-bottom: 1.3rem;
+		width: 50%;
+		margin: 1.3rem auto;
+	}
+	
+	.title-key{
+		color:$light-blue;
+	}
+	
+	.key-elements{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	
+	.elements{
+		@include border;
+		width: 24%;
+		background-color: $blue;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+	
+	.elements p{
+		margin-top: 1rem;
+		color: $white;
+		text-align: center;
+	}
+	
+	.elements i{
+		color: $white;
+		font-size: 3.2rem;
+		text-align: center;
+	}
+	
+	.uno p, .dos p, .tres p{
+		color: $white;
+	}
+	
+	.uno h1, .dos h1, .tres h1{
+		color: $white;
+	}
+	
+	.foto img{
+		width: 100%;
+	}
+	
+	.foto{
+		grid-area: group-img;
+	}
+	
+	.values{
+		grid-area: value;
+	}
+	
+	.who{
+		grid-area: we;
+	}
+	
+	.grid-primero{
+		margin-top: 2.5rem;
+		display: grid;
+		width: 86%;
+		column-gap: 10px;
+		grid-template-columns: 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px;
+		grid-template-rows: auto;
+		grid-template-areas: "we we we we . value value value value";
+		
+	}
+	
+	.values p, .who p{
+		margin-top: 1rem;
+	}
+	
+	.values h1, .who h1{
+		color: $light-blue;
+	}
+	
+	header{
+		margin-top: -3rem;
+	}
+	
+	.small-header{
+		display: none;
+	}
+	
+	.big-header{
+		margin-top: 3rem;
+	}
+	
+	.wrap-box{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	.uno, .dos, .tres{
+		width: 30%;
+		margin-top: 0;
+	}
+	
+	.two-column .parrafo, .image-two-column .image-building, .image-two-column .parrafo, .lista-container .parrafo, .column-again img, .column-again .parrafo, .green-financial, .offerings .box, .next-column .box{
+		width: 48%;
+	}
+	
+	.two-column, .image-two-column, .lista-container, .column-again, .green-column, .offerings, .next-column{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+	
+	.extra-button{
+		display: none;
+	}
+	
+	.offerings img{
+		width: 142%;
+		margin-top: 1.4rem;
+		margin-bottom: -49.5px;
+		@include border-caja;
+	}
+	
+	.blue-services{
+		height: 37.5rem;
+	}
+	
+	.dark-services{
+		margin-top: -33.75rem;
+	}
+	
+	.azul .extended{
+		margin-top: 9.375rem;
+	}
+	
+	.animation{
+		animation-name: move;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+	
+	.img-animation{
+		animation-name: move;
+		animation-duration: 6s;
+		animation-fill-mode: forwards;
+	}
+	
+	
+	
+}
+
+@media (min-width: 1024px){
+	*{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    section, footer, nav, .lista-container, header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .content, .div-box{
+        width: 86%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    
+    
+    .box{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: left;
+        margin-top: 1.6rem;
+        padding: 3rem;
+    }
+	
+	nav{
+		margin-bottom: 2.4rem;
+	}
+    
+    .uno{
+        margin-top: 0;
+    }
+    
+    .three, .two, .foto, footer, .grid-services, .four, .five, .six{
+        margin-top: 3rem;
+    }
+    
+    .big-box{
+         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: left;
+    }
+    
+    .navigation{
+        display: flex;
+		flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+		width: 86%;
+    }
+    
+    .logo{
+		width: 30%;
+    }
+	
+	.menu{
+		width: 70%;
+		display: flex;
+	}
+	
+	.menu ul{
+		list-style: none;
+		color: $white;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		column-gap: 2.125rem;
+		padding-left: 4rem;
+	
+	li{
+		padding-top: 2.125rem;
+		font-family: $font-mini;
+		font-size: 1.3rem;
+	}
+		
+		a{
+			color: $white;
+			text-decoration-line: none;
+		}
+		
+		a:hover{
+			text-decoration-line: underline;
+		}
+}
+	
+	
+	
+	
+	.fa-bars{
+		display: none;
+	}
+	
+    
+    footer .content{
+        flex-direction: row;
+		padding: 2rem 0;
+		justify-content: space-between;
+    }
+    
+    .box-footer{
+		width: 30%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 1rem;
+		color: $white;
+    }
+	
+	.medio, .izquierda{
+		padding-top: 1rem;
+		flex-direction: column;
+		display:flex;
+		flex-wrap: wrap;
+	}
+	
+	.box-footer p{
+		margin-bottom: 1rem;
+	}
+	
+	.box-footer a{
+		color: $white;
+		text-decoration-line: none;
+	}
+	
+	.box-footer a:hover{
+		text-decoration-line: underline;
+	}
+    
+    footer img{
+        width: 50%;
+    }
+    
+    .one p, .two p, .three p, .five p, .six p{
+        padding-top: 1rem;
+    }
+    
+    .div-box{
+        width: 100%;
+    }
+    
+    
+    
+    .lista{
+        margin-top: 1.2rem;
+    }
+	
+	.lista ol{
+		margin:0 0 0 0.75rem;
+	}
+    
+    .lista-container{
+        justify-content: space-between;
+		margin-top: 1rem;
+		@include text;
+    }
+    
+    .lista-container li{
+        margin: 0.6rem 0;
+    }
+    
+    .grid-services{
+        width: 86%;
+        display: grid;
+        grid-template-columns: 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 44px;
+		grid-template-rows: 232px 45px 24px 196px;
+
+    }
+    
+    .parrafo-unido{
+        grid-column-start: 1;
+		grid-column-end: 7;
+		grid-row-start: 1;
+		grid-row-end: 4;
+    }
+    
+    .primera-imagen{
+        grid-column-start: 8;
+		grid-column-end: 14;
+		grid-row-start: 1;
+		grid-row-end: 2;
+    }
+    
+    .segunda-imagen{
+        grid-column-start: 7;
+		grid-column-end: 14;
+		grid-row-start: 4;
+		grid-row-end: 5;
+    }
+	
+	h1{
+		@include titulo;
+	}
+	
+	h2{
+		@include subtitle;
+	}
+	
+	p{
+		@include text;
+		color: $black;
+	}
+	
+	h3{
+		@include subtitle;
+		font-size: 1.25rem;
+		margin-top: 1.2rem;
+		font-family: $font-mini;
+		color: $light-blue;
+	}
+	
+	.blue-services, .dos{
+		background-color: $light-blue;
+		color: $white;
+		@include border;
+	}
+	
+	.blue-services p, .green-services p, .dark-services p{
+		color: $white;
+	}
+	
+	.green-services, .tres{
+		background-color: $green;
+		color: $white;
+		@include border;
+	}
+	
+	.dark-services, .uno{
+		background-color: $blue;
+		color: $white;
+		@include border;
+	}
+	
+	.button{
+		@include border;
+		@include button;
+		@include text;
+		width: 60%;
+		margin: 0 auto;
+		border-color: $light-blue;
+		color: $light-blue;
+		margin-top: 1.4rem;
+	}
+	
+	.button:hover{
+		background-color: $light-blue;
+		color: $white;
+	}
+	
+	.last-section .button{
+		width: 100%;
+		border-color: $white;
+		color: $white;
+	}
+	
+	.azul .button:hover{
+		background-color: $white;
+		color: $blue;
+	}
+	
+	.verde .button:hover{
+		background-color: $white;
+		color: $green;
+	}
+	
+	.azul{
+		background-color: $blue;
+		@include border;
+	}
+	
+	.verde, .green-financial{
+		background-color: $green;
+		@include border;
+
+	}
+	
+	.last-section p, h2, .green-financial p{
+		color: $white;
+	}
+	
+	.grid-services img{
+		width: 100%;
+	}
+	
+	.primera-imagen{
+		margin-bottom: 2.40rem;
+		@include border;
+	}
+	
+	.segunda-imagen{
+		margin-top: 2.40rem;
+	}
+	
+	footer{
+		background-color: $blue;
+	}
+    
+	.financial-data img, .image-building, .image-header, .image-people, .image-revenue, .data-revenue{
+		width: 100%;
+		margin-top: 1rem;
+	}
+	
+	.data-revenue{
+		height: 8.75rem;
+	}
+	
+	.image-building, .image-revenue{
+		@include border;
+	}
+	
+	.cute-imagen{
+		display: none;
+	}
+	
+	.title-key{
+		color:$light-blue;
+	}
+	
+	.key-elements{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	
+	.elements{
+		@include border;
+		width: 24%;
+		background-color: $blue;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+	
+	.elements p{
+		margin-top: 1rem;
+		color: $white;
+		text-align: center;
+	}
+	
+	.elements i{
+		color: $white;
+		font-size: 3.2rem;
+		text-align: center;
+	}
+	
+	.uno p, .dos p, .tres p{
+		color: $white;
+	}
+	
+	.uno h1, .dos h1, .tres h1{
+		color: $white;
+	}
+	
+	.foto img{
+		width: 100%;
+	}
+	
+	.foto{
+		grid-area: group-img;
+	}
+	
+	.grid-primero{
+		margin-top: 2.5rem;
+		display: grid;
+		width: 86%;
+		column-gap: 10px;
+		grid-template-columns: 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px;
+		grid-template-rows: auto;
+		grid-template-areas: "we we we we we . value value value value value";
+		
+	}
+	
+	.financial-image{
+		margin-top: 2rem;
+		display: grid;
+		width: 86%;
+		column-gap: 10px;
+		grid-template-columns: 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px;
+		grid-template-rows: 70px 254px 39px 195px 60px;
+	}
+	
+	.image-people{
+		width: 180%;
+		grid-column-start: 7;
+		grid-column-end: 10;
+		grid-row-start: 2;
+		grid-row-end: 4;
+		
+	}
+	
+	.elemt{
+		margin-top: 4.3rem;
+	}
+	
+	.financial-image .parrafo{
+		padding-left: 1.4rem;
+		grid-column-start: 1;
+		grid-column-end: 6;
+		grid-row-start: 1;
+		grid-row-end: 5;
+	}
+	
+	.values{
+		grid-area: value;
+	}
+	
+	.who{
+		grid-area: we;
+	}
+	
+	.values p, .who p{
+		margin-top: 1rem;
+	}
+	
+	.values h1, .who h1{
+		color: $light-blue;
+	}
+	
+	header{
+		margin-top: -3rem;
+	}
+	
+	.small-header{
+		display: none;
+	}
+	
+	.big-header{
+		margin-top: 3rem;
+	}
+	
+	.wrap-box{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	.uno, .dos, .tres{
+		width: 30%;
+		margin-top: 0;
+	}
+	
+	.two-column .parrafo, .image-two-column .image-building, .image-two-column .parrafo, .lista-container .parrafo, .column-again img, .column-again .parrafo, .green-financial, .offerings .box, .next-column .box{
+		width: 48%;
+	}
+	
+	.two-column, .image-two-column, .lista-container, .column-again, .green-column, .offerings, .next-column{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+	
+	.extra-button{
+		display: none;
+	}
+	
+	.offerings img{
+		width: 129.8%;
+		margin-top: 1.4rem;
+		@include border-caja;
+	}
+	
+	.blue-services{
+		height: 37.5rem;
+	}
+	
+	.dark-services{
+		margin-top: -21.5rem;
+	}
+	
+	.azul .extended{
+		margin-top: 9.375rem;
+	}
+	
+	.verde h2{
+		text-align: center;
+	}
+	
+	.verde .button{
+		margin-top: 3.5rem;
+	}
+	
+	.animation{
+		animation-name: move;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+	
+	.img-animation{
+		animation-name: move;
+		animation-duration: 6s;
+		animation-fill-mode: forwards;
+	}
+}
+
+@keyframes move{
+	from{transform: translateX(-200px)}
+	to{transform: translateX(8px)}
+}
+
+@keyframes imagen{
+	from{transform: translateX(-190px)}
+	to{transform: translateX(2px)}
+}
